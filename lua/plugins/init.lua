@@ -26,5 +26,11 @@ require("lazy").setup({
 				require("../configs/formatter")
 			end,
 		},
+
+		{
+			"windwp/nvim-autopairs",
+			event = "InsertEnter",
+			config = true,
+		},
 	},
 })
