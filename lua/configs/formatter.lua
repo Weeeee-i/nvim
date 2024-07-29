@@ -19,6 +19,20 @@ require("formatter").setup({
 			-- You can also define your own configuration
 		},
 
+		python = {
+			require("formatter.filetypes.python").autopep8,
+		},
+
+        html = {
+          function()
+            return {
+              exe = 'prettier',
+              args = { '--write' },
+              stdin = false,
+            }
+          end
+        },
+
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
 		["*"] = {

@@ -11,7 +11,16 @@ require("lazy").setup({
 		{
 			"echasnovski/mini.nvim",
 			init = function()
-				require("mini.completion").setup()
+				require("mini.completion").setup({
+
+                })
+				require("mini.pairs").setup()
+				require("mini.cursorword").setup()
+				require("mini.icons").setup()
+				require("mini.jump").setup()
+				require("mini.notify").setup()
+				require("mini.tabline").setup()
+				require("mini.surround").setup()
 			end,
 		},
 		{
@@ -25,12 +34,6 @@ require("lazy").setup({
 			init = function()
 				require("../configs/formatter")
 			end,
-		},
-
-		{
-			"windwp/nvim-autopairs",
-			event = "InsertEnter",
-			config = true,
 		},
 	},
 })
