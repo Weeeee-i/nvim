@@ -11,9 +11,7 @@ require("lazy").setup({
 		{
 			"echasnovski/mini.nvim",
 			init = function()
-				require("mini.completion").setup({
-
-                })
+				require("mini.completion").setup({})
 				require("mini.pairs").setup()
 				require("mini.cursorword").setup()
 				require("mini.icons").setup()
@@ -33,6 +31,12 @@ require("lazy").setup({
 			"mhartington/formatter.nvim",
 			init = function()
 				require("../configs/formatter")
+			end,
+		},
+		{
+			"zk-org/zk-nvim",
+			init = function()
+				require("zk").setup({})
 			end,
 		},
 	},
