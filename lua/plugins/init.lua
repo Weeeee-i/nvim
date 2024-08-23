@@ -33,5 +33,11 @@ require("lazy").setup({
 				require("../configs/formatter")
 			end,
 		},
+		{
+			"zk-org/zk-nvim",
+			init = function()
+				require("zk").setup({})
+			end,
+		},
 	},
 })
