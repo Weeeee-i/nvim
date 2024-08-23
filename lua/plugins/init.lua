@@ -11,9 +11,7 @@ require("lazy").setup({
 		{
 			"echasnovski/mini.nvim",
 			init = function()
-				require("mini.completion").setup({
-
-                })
+				require("mini.completion").setup({})
 				require("mini.pairs").setup()
 				require("mini.cursorword").setup()
 				require("mini.icons").setup()

@@ -21,7 +21,7 @@ local options = {
 	undofile = true, -- enable persistent undo
 	updatetime = 300, -- faster completion (4000ms default)
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
-	expandtab = true, -- convert tabs to spaces
+	expandtab = false, -- convert tabs to spaces
 	shiftwidth = 2, -- the number of spaces inserted for each indentation
 	tabstop = 4, -- insert 2 spaces for a tab
 	cursorline = true, -- highlight the current line
@@ -30,7 +30,7 @@ local options = {
 	numberwidth = 4, -- set number column width to 2 {default 4}
 
 	signcolumn = "yes", -- always show the sign column, otherwise it would shift the text each time
-	wrap = true, -- display lines as one long line
+	wrap = false, -- display lines as one long line
 	linebreak = true, -- companion to wrap, don't split words
 	scrolloff = 8, -- minimal number of screen lines to keep above and below the cursor
 	sidescrolloff = 8, -- minimal number of screen columns either side of cursor if wrap is `false`
