@@ -12,26 +12,24 @@ require("formatter").setup({
 		-- Formatter configurations for filetype "lua" go here
 		-- and will be executed in order
 		lua = {
-			-- "formatter.filetypes.lua" defines default configurations for the
-			-- "lua" filetype
 			require("formatter.filetypes.lua").stylua,
-
-			-- You can also define your own configuration
 		},
 
 		python = {
-			require("formatter.filetypes.python").autopep8,
+			require("formatter.filetypes.python").ruff,
 		},
 
-        html = {
-          function()
-            return {
-              exe = 'prettier',
-              args = { '--write' },
-              stdin = false,
-            }
-          end
-        },
+		html = {
+			require("formatter.filetypes.html").prettierd,
+		},
+
+		css = {
+			require("formatter.filetypes.css").prettierd,
+		},
+
+		json = {
+			require("formatter.filetypes.json").prettierd,
+		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
